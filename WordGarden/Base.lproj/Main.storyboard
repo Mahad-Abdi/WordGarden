@@ -118,6 +118,10 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="io9-Qm-hux"/>
+                                            <action selector="guessedLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="fae-hV-PJf"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-Tn-Dty">
                                         <rect key="frame" x="48" y="0.0" width="150" height="30"/>
@@ -170,6 +174,8 @@
                         <outlet property="playAgainButton" destination="E6j-up-PTN" id="5ef-Np-jZl"/>
                         <outlet property="wordBeingRevealedLabel" destination="Avl-hv-m3Q" id="B7x-zu-tVz"/>
                         <outlet property="wordsGuessedLabel" destination="hTd-7w-JKK" id="uEM-oD-swq"/>
+                        <outlet property="wordsInGameLabel" destination="b4X-pQ-L0q" id="ddo-oz-SMv"/>
+                        <outlet property="wordsMissedLabel" destination="D5A-s7-I3J" id="P57-44-WJB"/>
                         <outlet property="wordsRemainingLabel" destination="9Vd-b8-CmF" id="ol9-rM-ISg"/>
                     </connections>
                 </viewController>
